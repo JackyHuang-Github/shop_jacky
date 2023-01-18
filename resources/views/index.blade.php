@@ -215,9 +215,5 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD
     <!-- Shop Method End--> --}}
-=======
-    <!-- Shop Method End-->
->>>>>>> shop_yuirice
 @endsection

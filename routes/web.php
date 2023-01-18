@@ -27,7 +27,8 @@ Route::namespace ('App\Http\Controllers')->group(function () {
     Route::post('/contacts', 'SiteController@storeContact');
     Route::get('addcart/{item}/{quantity}', 'SiteController@addCart');
     Route::get('cart', 'SiteController@cartPage');
-    Route::get('/movie_intro', 'SiteController@movie_intro');
+    Route::get('/movie/{id}', 'MovieController@movie');
+    Route::get('/movies_all', 'MovieController@movie_all');
 });
 
 Route::get('picArray', function () {

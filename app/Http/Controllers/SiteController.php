@@ -7,6 +7,7 @@ use App\Models\Cgy;
 use App\Models\Contact;
 use App\Models\Element;
 use App\Models\Item;
+use App\Models\Movie;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -94,24 +95,25 @@ class SiteController extends Controller
         return redirect('/contact');
     }
 
-    public function movie_intro()
-    {
-        // //取得最新消息的所有文章
-        // $cgy = Cgy::find(1);
-        // //$articles_news = $cgy->articles()->paginate(5);
-        // $articles_news = Article::where('cgy_id', 1)->paginate(5);
-        // $cgies = Cgy::get();
-        // return view('blog', compact('cgy', 'articles_news', 'cgies'));
+    // public function movie_intro()
+    // {
+    //     // //取得最新消息的所有文章
+    //     // $cgy = Cgy::find(1);
+    //     // //$articles_news = $cgy->articles()->paginate(5);
+    //     // $articles_news = Article::where('cgy_id', 1)->paginate(5);
+    //     // $cgies = Cgy::get();
+    //     // return view('blog', compact('cgy', 'articles_news', 'cgies'));
 
-        // $item = Item::find();
+    //     // $item = Item::find();
  
-         //取得最新消息的所有文章
-         $cgy = Cgy::find(1);
-         //$articles_news = $cgy->articles()->paginate(5);
-         $articles_news = Article::where('cgy_id', 1)->paginate(5);
-         $cgies = Cgy::get();
+    //      //取得最新消息的所有文章
+    //      $cgy = Cgy::find(1);
+    //      //$articles_news = $cgy->articles()->paginate(5);
+    //      $articles_news = Article::where('cgy_id', 1)->paginate(5);
+    //      $cgies = Cgy::get();
 
-        // return view('movie_intro');
-        return view('movie_intro', compact('cgy', 'articles_news', 'cgies'));
-    }
+    //     // return view('movie_intro');
+    //     return view('movie_intro', compact('cgy', 'articles_news', 'cgies'));
+    // }
+
 }
